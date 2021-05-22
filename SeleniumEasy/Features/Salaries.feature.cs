@@ -105,8 +105,8 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("I read the salaries of all the \"software engineer\" at the company", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 8
- testRunner.Then("I shoud able to verify that the highest salary for a software engineer is $206,85" +
-                        "0/y", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I shoud able to verify that the highest salary for a software engineer is \"$206,8" +
+                        "50/y\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

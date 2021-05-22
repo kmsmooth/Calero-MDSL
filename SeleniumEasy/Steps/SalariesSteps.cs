@@ -24,11 +24,14 @@ namespace SeleniumEasy.Steps
             salariesPage.ReadSalaries(p0);
         }
 
-
-        [Then(@"I shoud able to verify that the highest salary for a software engineer is \$(.*)/y")]
-        public void ThenIShoudAbleToVerifyThatTheHighestSalaryForASoftwareEngineerIsY(Decimal p0)
+        [Then(@"I shoud able to verify that the highest salary for a software engineer is ""(.*)""")]
+        public void ThenIShoudAbleToVerifyThatTheHighestSalaryForASoftwareEngineerIs(string p0)
         {
-            ScenarioContext.Current.Pending();
+            salariesPage.ValidHighestSalary(p0);
         }
+
+
+
+      
     }
 }

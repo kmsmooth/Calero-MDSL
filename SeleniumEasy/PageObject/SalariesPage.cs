@@ -2,6 +2,7 @@
 using SeleniumEasy.Hooks;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace SeleniumEasy.PageObject
@@ -20,6 +21,11 @@ namespace SeleniumEasy.PageObject
             driver.FindElement(readSalaries).SendKeys(p0);
         }
 
+        private By validHighestSalary = By.CssSelector("#example > tbody > tr.even > td:nth-child(6)");
+        public bool ValidHighestSalary(string p0)
+        {
+            return driver.Url.Contains(p0);
+        }
 
 
 
