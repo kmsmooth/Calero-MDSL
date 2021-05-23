@@ -19,12 +19,12 @@ namespace SeleniumEasy.Hooks
         {
             driver = new ChromeDriver(AppDomain.CurrentDomain.BaseDirectory);
             driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
         }
 
         [AfterScenario]
         public static void AfterScenario()
         {
-            Thread.Sleep(10000);
             driver.Quit();
         }
     }

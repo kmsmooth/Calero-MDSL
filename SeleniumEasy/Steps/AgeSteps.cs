@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using NUnit.Framework;
+using OpenQA.Selenium;
 using SeleniumEasy.Hooks;
 using SeleniumEasy.PageObject;
 using System;
@@ -24,11 +25,18 @@ namespace SeleniumEasy.Steps
         {
             agePage.SearchUsers(p0);
         }
-        
-        [Then(@"I verify that the average age of all the employees in that office is (.*)")]
-        public void ThenIVerifyThatTheAverageAgeOfAllTheEmployeesInThatOfficeIs(int p0)
+
+        [When(@"I read the age of all the employees in the grid")]
+        public void WhenIReadTheAgeOfAllTheEmployeesInTheGrid()
         {
-            ScenarioContext.Current.Pending();
+            agePage.Age();
         }
+
+
+        //[Then(@"I verify that the average age of all the employees in that office is (.*)")]
+        //public void ThenIVerifyThatTheAverageAgeOfAllTheEmployeesInThatOfficeIs()
+        //{
+            
+        //}
     }
 }
