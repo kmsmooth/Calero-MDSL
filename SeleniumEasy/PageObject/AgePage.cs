@@ -31,28 +31,7 @@ namespace SeleniumEasy.PageObject
             return averageAge;          
         }
 
-       
-
       
-
-        //private By averageAge = By.CssSelector("");
-        //public  double AverageUserAge()
-        //{
-        //    Queryable.Average;
-        //    return 
-        //}
-
-        //public void AllAges()
-        //{
-        //    private By ages = By.CssSelector("");
-        //    //var arr = new int[] { 66, 59, 48, 39, 36, 28,};
-        //    //double avg = Queryable.Average(arr.AsQueryable());
-        //    //Console.WriteLine("Average = " + avg);
-
-        //    //var Age = 66 + 28 + 39 + 36 + 48 + 59;
-        //    //AverageAge = 
-        //}
-
 
 
 

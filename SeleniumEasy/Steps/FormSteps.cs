@@ -32,21 +32,6 @@ namespace SeleniumEasy.Steps
             formpage.Website(p7);
         }
 
-
-        //[Given(@"user Fills in details '(.*)' '(.*)' '(.*)' '(.*)' '(.*)' '(.*)' '(.*)' '(.*)' '(.*)'")]
-        //public void GivenUserFillsInDetails(string p0, string p1, string p2, string p3, string p4, string p5, string p6, string p7, string p8)
-        //{
-        //    formpage.FirstName(p0);
-        //    formpage.LastName(p1);
-        //    formpage.Email(p2);
-        //    formpage.Phone(p3);
-        //    formpage.Address(p4);
-        //    formpage.City(p5);
-        //    formpage.State();
-        //    formpage.ZipCode(p7);
-        //    formpage.Website(p8);
-        //}
-
         
         [Given(@"I tick yes or no do you have hosting\?")]
         public void GivenITickYesOrNoDoYouHaveHosting()
