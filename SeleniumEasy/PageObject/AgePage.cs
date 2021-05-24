@@ -24,7 +24,7 @@ namespace SeleniumEasy.PageObject
             driver.FindElement(searchUsers).SendKeys(p0);
         }
 
-        public int Age()
+        public int Age(int p0)
         {
             var age = 66 + 28 + 39 + 36 + 48 + 59;
             var averageAge = age / 6;

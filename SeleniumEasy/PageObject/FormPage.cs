@@ -62,6 +62,7 @@ namespace SeleniumEasy.PageObject
             driver.FindElement(state).Click();
             var selectElement = new SelectElement(driver.FindElement(By.CssSelector("#contact_form > fieldset > div:nth-child(8) > div > div > select")));
             selectElement.SelectByText("New York");
+            
         }
 
         public void ZipCode(string p6)

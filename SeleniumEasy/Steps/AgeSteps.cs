@@ -26,17 +26,14 @@ namespace SeleniumEasy.Steps
             agePage.SearchUsers(p0);
         }
 
-        [When(@"I read the age of all the employees in the grid")]
-        public void WhenIReadTheAgeOfAllTheEmployeesInTheGrid()
+        [Then(@"I verify that the average age of all the employees in that office is (.*)")]
+        public void ThenIVerifyThatTheAverageAgeOfAllTheEmployeesInThatOfficeIs(int p0)
         {
-            agePage.Age();
+            agePage.Age(p0);
         }
 
 
-        //[Then(@"I verify that the average age of all the employees in that office is (.*)")]
-        //public void ThenIVerifyThatTheAverageAgeOfAllTheEmployeesInThatOfficeIs()
-        //{
-            
-        //}
+
+     
     }
 }

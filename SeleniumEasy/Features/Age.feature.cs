@@ -105,7 +105,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("I search of users in \"San Francisco\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 8
- testRunner.And("I read the age of all the employees in the grid", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Then("I verify that the average age of all the employees in that office is 46", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
